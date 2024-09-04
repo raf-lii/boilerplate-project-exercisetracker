@@ -45,6 +45,8 @@ app.post('/api/users/:_id/exercises', async (req, res) => {
     date: (req.body.date)? new Date(req.body.date) : new Date(),
   });
 
+  //tes
+
   exercise.save()
     .then(result => {
       return res.json({
